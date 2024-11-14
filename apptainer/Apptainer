@@ -1,0 +1,24 @@
+BootStrap: docker
+From: quay.io/jupyter/datascience-notebook
+
+%files
+    mamba_env.yml mamba_env.yml
+
+
+%environment
+    export LISTEN_PORT=9998
+
+%post
+    mamba remove rpy2 && \
+    mamba env update --name base --file mamba_env.yml && \
+    mamba clean --all -f -y && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
+
+    Rscript -e "BiocManager::install('imcRtools', version = '3.20', update = FALSE)"
+    
+%runscript
+    jupyter lab --ip=0.0.0.0 --no-browser --port=$LISTEN_PORT --LabApp.default_url="/lab/workspaces/template?reset"
+
+%help
+    Run this container to run the comparison between qupath and deepcell based segmentation

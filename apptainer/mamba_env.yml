@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - r-base=4.4.1=h0be853a_12
+  - r-biocmanager=1.30.25=r44hc72bb7e_0
+  - r-concaveman=1.1.0=r44hc72bb7e_3
+  - r-magick=2.8.5=r44h93ab643_0
+  - r-sf=1.0_16=r44he471ed8_8
+  - r-terra=1.7_78=r44he471ed8_4
