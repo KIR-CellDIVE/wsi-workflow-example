@@ -54,10 +54,10 @@ source ~/.profile
 
 If you have followed the installation step you should be able to run the segmentation, analysis and QuPath-vs-Deepcell comparison notebooks found in the `notebooks` subfolder in this repository. For the QuPath-vs-Deepcell comparison we have already include example results following segmentation and quantification with the respective methods. In order to run the segmentation and analysis notebook you have to download the three example whole slide image from [here]() and place them into the `ome_tiff` folder alongside the `notebooks` folder containing the jupyter notebook. 
 
-If you are on `Windows` and you use `WSL`, first open `PowerShell` and enter the previously created WSL environment `Ubuntu` as the user `ubuntu` if you haven't already done so:
+If you are on `Windows` and you use `WSL`, first open `PowerShell` and enter the previously created WSL environment `Ubuntu_DIVEMAP` as the user `ubuntu` if you haven't already done so:
 
 ```bash
-wsl -d Ubuntu -u ubuntu
+wsl -d Ubuntu_DIVEMAP -u ubuntu
 ```
 
 If you have successfully set up the `Apptainer` containers for [segmentation](https://github.com/KIR-CellDIVE/wsi-segmentation) and [analysis](https://github.com/KIR-CellDIVE/wsi-analysis) as well as the one in the previous section, you should have the following 3 commands available to start the respective Jupyter Lab servers: `wsi-segmentation-gpu` (or `wsi-segmentation`), `wsi-analysis` and `wsi_segmentation_comparison`.
