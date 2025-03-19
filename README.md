@@ -52,7 +52,7 @@ source ~/.profile
 
 ## Run notebooks
 
-If you have followed the installation step you should be able to run the segmentation, analysis and QuPath-vs-Deepcell comparison notebooks found in the `notebooks` subfolder in this repository. For the QuPath-vs-Deepcell comparison we have already include example results following segmentation and quantification with the respective methods. In order to run the segmentation and analysis notebook you have to download the three example whole slide image from [here](https://huggingface.co/datasets/kir-celldive/divemap/resolve/main/ome_tiff.zip) and place them into the `ome_tiff` folder alongside the `notebooks` folder containing the jupyter notebook. 
+If you have followed the installation step you should be able to run the segmentation, analysis and QuPath-vs-Deepcell comparison notebooks found in the `notebooks` subfolder in this repository. For the QuPath-vs-Deepcell comparison we have already include example results following segmentation and quantification with the respective methods. In order to run the segmentation and analysis notebook you have to download the three example whole slide image from  [DOI 10.5281/zenodo.14926053](10.5281/zenodo.14926053) and place them into the `ome_tiff` folder alongside the `notebooks` folder containing the jupyter notebook. 
 
 If you are on `Windows` and you use `WSL`, first open `PowerShell` and enter the previously created WSL environment `Ubuntu_DIVEMAP` as the user `ubuntu` if you haven't already done so:
 
